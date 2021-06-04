@@ -256,6 +256,7 @@ header{
 .main-content .rocket-img{
     display: flex;
     flex-direction: column;
+    z-index: 1;
 }
 
 .main-content .right-side-of-rocket{
