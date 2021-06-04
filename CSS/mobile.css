@@ -1,0 +1,321 @@
+/* Media Query for nav responsiveness */
+@media (max-width: 500px) {
+    .navigation{
+        margin: 0rem;
+        width: 85%;
+        margin: auto;
+    }
+
+
+    .navigation img{
+        width: 10rem;
+        height: 1.4rem;
+    }
+
+    .navigation #search{
+        display: none;
+    }
+
+    .navigation .hamburger{
+        display: flex;
+    }
+
+    .nav-line{
+        display: none;
+    }
+    
+    .vertical-line{
+        display: none;
+    }
+  }
+
+/* Making navigation for hamburger icon */
+@media (max-width: 500px){
+    .navigation ul{
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        top: 5rem;
+        left: 0;
+        width: 100vw;
+        height: 90vh;
+        background-color: black;
+        z-index: 1;
+    }
+
+    .navigation li{
+        text-align: center;
+        padding: 2.2rem 0rem;
+    }
+}
+
+
+
+/* Making center part Responsive*/
+@media (max-width: 500px) {
+    .social-media-icons{
+        display: none;
+    }
+
+    .first-screen{
+        height: fit-content;
+    }
+
+    #bg-image{
+        object-fit: cover;
+        object-fit: 100%;
+    }
+
+    .center-part{
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 3rem;
+        overflow: hidden;
+    }
+
+    .center-part .left{
+        width: 100%;
+    }
+
+    .center-part .right{
+        width: 80%;
+    }
+
+    .center-part #astro-img{
+        width: 100%;
+        margin-left: 0rem;
+        height: 10%;
+    }
+
+    #explore-space{
+        margin-bottom: 3rem;
+    }
+    
+}
+
+
+/* Making Falcon9 rocket Responsive */
+@media (max-width: 500px) {
+    .final-screen{
+        overflow: scroll;
+        width: 100vw;
+    }
+    
+    .final-screen .main-content{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    
+    .main-content .left-side-of-rocket{
+        flex: 0 0 30%;
+        padding-right: 0rem; 
+        padding-left: 1.5rem;
+        position: relative;
+        right: 0em;
+    }
+    
+    .main-content  p {
+        font-weight: 100;
+        font-size: 7px;
+        line-height: 10px;
+        text-align: left;
+        width: 90%;
+        /* display: none; */
+    }
+    
+    .main-content  h2{
+        padding-bottom: 0em;
+        font-weight: 300;
+        font-size: 12px;
+        padding-left: 0em;
+    }
+    
+    .main-content  .underline{
+        width: 50px;
+        height: 1px;
+        color: white;
+        background-color: white;
+        margin-bottom: 1em;
+        border-radius: 20%;
+    }
+
+    .small-underline{
+        width: 1em;
+        height: 1px;
+        color: white;
+        background-color: white;
+        margin-bottom: 0.5rem;
+        border-radius: 20%;
+    }
+
+    .left-side-of-rocket .dragon-spacecraft .underline{
+        width: 2em;
+    }
+
+    .main-content .object-pointer{
+        width: 16px;
+        height: 1px;
+        color: white;
+        background-color: white;
+        position: relative;
+        /* display: none; */
+    }
+
+    .right-side-of-rocket .nine-merline-engines .object-pointer{
+        bottom: 0px;
+        right: 0px;
+    }
+    
+    .right-side-of-rocket .payload .object-pointer{
+        position: relative;
+        bottom: 4em;
+        right: 2.8em;
+        width: 5em;
+    }
+
+    .right-side-of-rocket .nine-merline-engines .object-pointer{
+        bottom: 7em;
+        right: 3.5em;
+        width: 4em;
+    }
+
+    .left-side-of-rocket .first-stage hr{
+        bottom: 6em;
+        left: 5.6em;
+        width: 3em;
+    }
+    
+    .left-side-of-rocket .dragon-spacecraft .object-pointer{
+        position: relative;
+        bottom: 8.7em;
+        left: 5em;
+        width: 3em;
+        /* z-index: -10000; */
+    }
+
+    .main-content button{
+        background: transparent;
+        border: 1px solid white;
+        color: white;
+        padding: 0.4em 2em;
+        display: none;
+        font-size: 0.4em;
+    }
+
+    .left-side-of-rocket .falcon-9{
+        padding-bottom: 4em;
+    }
+
+
+    .main-content .rocket-img{
+        display: flex;
+        flex-direction: column;
+        height: 30%;
+        width: 30%;
+        /* overflow: hidden; */
+        /* display: none; */
+        width: 16%;
+        z-index: 1;
+    }
+    
+    .main-content .right-side-of-rocket{
+        flex: 0 0 30%;
+        padding-right: 0em;
+        padding-left: 2em;
+        /* display: none; */
+    }
+    
+    .right-side-of-rocket .payload{
+        margin-top: 6em;
+        padding-bottom: 5em;
+    }
+
+    .right-side-of-rocket .merlin-engine-img{
+        margin-top: 3em;
+        width: 80%;
+        margin-left: 0em;
+    }
+
+    .right-side-of-rocket .nine-merline-engines{
+        margin-top: 2em;
+        margin-left: 0em;
+        /* display: none; */
+    }
+
+    .right-side-of-rocket .nine-merline-engines p:nth-child(1){
+        margin-bottom: 0.6rem;
+        margin-left: 3em;
+    }
+    
+    .right-side-of-rocket .nine-merline-engines p:nth-child(2){
+        margin-left: 0rem;
+    }
+    
+
+    .last-transparent-img{
+        /* display: none; */
+        position: absolute;
+        width: 16%;
+        right: 0;
+        top: 49.5rem;
+    }
+    
+}
+
+
+
+/* Making Footer Responsive */
+@media (max-width: 500px) {
+    footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 1rem  1rem;
+    }
+
+    .logo{
+        padding-bottom: 2rem;
+        width: 100%;
+    }
+    
+    .logo img{
+        width: 10rem;
+    }
+    
+    .about-us hr{
+        margin-bottom: 0.2rem;
+    }
+    
+    .about-us {
+        padding-bottom: 1.2rem;
+    }
+     
+    .company hr{
+        margin-bottom: 0.2rem;
+    }
+
+    .company{
+        margin-bottom: 1rem;
+    }
+    
+    .socials{    
+        margin-top: 0.3rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .socials h3{
+        display: none;
+    }
+
+    .socials hr{
+        display: none;
+    }
+
+    .socials i{
+        padding: 1rem;
+    }
+    
+}

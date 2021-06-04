@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
+@import url('./generic-css.css');
+@import url('./mobile.css');
+
+*{
+    padding:0px;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    /* overflow: hidden; */
+}
+
+
+.first-screen{
+    height: 100vh;
+    position: relative;
+}
+
+#bg-image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    filter: brightness(0.45);
+}
+
+header{
+    position: relative;
+}
+
+
+
+/* Navigation bar CSS */
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin:auto;
+    padding: 1.2rem 0rem;
+}
+
+.navigation img{
+    width: 12rem;
+    height: 1.7rem;
+}
+
+.navigation ul {
+    display: flex;
+}
+
+.navigation ul li{
+    margin: 0px 1rem;
+    list-style: none;
+}
+
+.navigation ul li a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size:0.89rem;
+    font-weight: 100;
+}
+
+.navigation ul li a:hover{
+    color: #a9a9a9;
+}
+
+.navigation #search-logo{
+    width: 1rem;
+    height: 1rem;
+    position: relative;
+    top:0.2rem;
+    left: 2rem;
+    /* filter: invert(1); */
+}
+
+.navigation #nav-search{
+    border: none;
+    border-radius: 0.7rem;
+    padding: 0.35rem;
+    padding-left: 2.5rem;
+    outline: none;
+    background-color: #171717;
+    color: white;
+}
+
+.navigation .hamburger{
+    position: absolute;
+    height: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    top: 1.35rem;
+    right:2.4rem;
+}
+
+.navigation .hamburger hr{
+    width: 18px;
+    height: 1.2px;
+    padding: 1px;
+    border-radius: 25px;
+    border: none;
+    background-color: white;
+}
+
+.nav-line{
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    opacity: 0.05;
+}
+
+
+
+
+
+
+/* Social media Icons */
+.social-media-icons{
+    position: absolute;
+    height: 60%;
+    width: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.social-media-icons i{
+    color: white;
+    border: 1.5px solid white;
+    margin: 16px 0px;
+    padding: 10px 10px;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+.social-media-icons i:hover{
+    cursor: pointer;
+    background-color: rgb(44, 46, 45);
+    color: white;
+    cursor: pointer;
+
+}
+
+.vertical-line{
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    width: 1px;
+    height: 100%;
+    background-color: white;
+    opacity: 0.05;
+}
+
+
+
+
+/* Center portion */
+.center-part{
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 80%;
+    margin: auto;
+    margin-top: 6rem;
+}
+
+.center-part .left{
+    width: 48%;
+    text-align: center;
+}
+
+.center-part .left h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size:1.1rem;
+    line-height: 2rem;
+    text-align: center;
+    opacity: 0.9;
+}
+
+.center-part .right{
+    width: 50%;
+}
+
+.center-part #astro-img{
+    width: 70%;
+    margin-left: 5rem;
+    animation-name: moveInSpace;
+    animation-duration: 8s; 
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running; 
+}
+/* Animation for astronaut */
+@keyframes moveInSpace {
+    50% {
+       transform: translateY(15px) rotate(-30deg) scale(0.8); 
+    }
+}
+
+
+
+
+
+/* Starlink Ad */
+.starlink-ad{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(22, 22, 22);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.starlink-ad #join-now{
+    padding: 0.6rem 1.5rem;
+}
+
+
+
+
+
+
+
+/* Rocket Image and animation */
+.final-screen{
+    display: flex;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+.final-screen .main-content{
+    display: flex;
+    flex: 0 0 90%;
+    justify-content: space-around;
+}
+
+
+.main-content .left-side-of-rocket{
+    flex: 0 0 30%;
+    padding-right: 5em;
+    padding-left: 10em;
+}
+
+.main-content .rocket-img{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content .right-side-of-rocket{
+    flex: 0 0 30%;
+    padding-right: 10rem;
+    padding-left: 5rem;
+}
+
+
+/* arranging left side */
+.left-side-of-rocket .falcon-9{
+    padding-bottom: 7em;
+}
+
+.left-side-of-rocket .dragon-spacecraft button{
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 0.4em 2em;
+}
+
+.left-side-of-rocket .dragon-spacecraft .object-pointer{
+    position: relative;
+    bottom: 13em;
+    left: 20em;
+    width: 8.5em;
+}
+
+.left-side-of-rocket .dragon-spacecraft .underline{
+    width: 8em;
+}
+
+.left-side-of-rocket .composite-fairing{
+    margin-top: 3em;
+}
+
+.left-side-of-rocket .first-stage{
+    margin-top: 3em;
+}
+
+.left-side-of-rocket .first-stage hr{
+    bottom: 12em;
+    left: 19.8em;
+    width: 9em;
+}
+
+.left-side-of-rocket .engine-burntime{
+    margin-top: 2em;
+}
+
+
+
+/* Arranging Right side */
+.right-side-of-rocket .payload{
+    margin-top: 6rem;
+    padding-bottom: 5rem;
+}
+
+.right-side-of-rocket .payload .object-pointer{
+    position: relative;
+    bottom: 5.7rem;
+    right: 5.3rem;
+}
+
+.right-side-of-rocket .payload h2,#payload-underline{
+    margin-left: 3rem;
+}
+
+.right-side-of-rocket .second-stage .underline{
+    width: 5rem;
+}
+
+.right-side-of-rocket .merlin-engine-img{
+    margin-top: 3rem;
+    width: 50%;
+    margin-left: 3rem;
+}
+
+.right-side-of-rocket .nine-merline-engines{
+    margin-top: 7rem;
+    margin-left: 3rem;
+}
+
+.right-side-of-rocket .nine-merline-engines p:nth-child(1){
+    margin-bottom: 0.8rem;
+}
+
+.right-side-of-rocket .nine-merline-engines p:nth-child(2){
+    margin-left: -5rem;
+}
+
+.right-side-of-rocket .nine-merline-engines .object-pointer{
+    bottom: 9rem;
+    right: 8rem;
+}
+
+
+
+.last-transparent-img #bus{
+    /* position: fixed; */
+    position: -webkit-sticky; /* Safari */
+    position:  sticky;
+    top: 5rem;
+    width: 90%;
+}
+
+
+
+
+
+
+
+/* Footer  */
+footer{
+    background: #171717;
+    display: flex;
+    padding: 3rem  2rem;
+    justify-content: space-around;
+    color: white;
+}
+
+.logo{
+    /* width: fit-content; */
+    width: 120px;
+}
+
+.logo img{
+    width: 12rem;
+}
+
+.about-us ul li{
+    margin: 0px 1rem;
+    list-style: none;
+}
+
+.about-us ul li a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size:0.6rem;
+    font-weight: 100;
+}
+
+.about-us ul li a:hover{
+    color: #a9a9a9;
+}
+
+.about-us h3{
+    padding-left: 1rem;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.about-us hr{
+    margin-bottom: 0.7rem;
+    margin-left: 1rem;
+    padding: 0rem;
+}
+
+.company ul li{
+    margin: 0px 1rem;
+    list-style: none;
+}
+
+.company ul li a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size:0.6rem;
+    font-weight: 100;
+}
+
+.company h3{
+    padding-left: 1rem;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.company hr{
+    margin-bottom: 0.7rem;
+    margin-left: 1rem;
+    padding: 0rem;
+    width: 2.5rem;
+}
+
+.socials i{
+    padding: 0.5rem;
+    color: #e6e3e3;
+}

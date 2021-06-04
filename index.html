@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="/CSS/mobile.css">
+    <title>SpaceX</title>
+</head>
+
+<body>
+
+    <!-- Front screen  -->
+    <div class="first-screen">
+        <img src="./img/sunrise.jpg" alt="" id="bg-image">
+
+        <header>
+            <nav class="navigation">
+                <img src="./img/logo.png" alt="LOGO">
+                <ul id="for_js">
+                    <li><a href="#">Home</a> </li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Updates</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Shop</a></li>
+                </ul>
+                <div id="search">
+                    <img src="./img/search.png" alt="" id="search-logo">
+                    <input type="search" name="" id="nav-search" placeholder="Search">
+                </div>
+
+                <div class="hamburger">
+                    <hr>
+                    <hr>
+                    <hr>
+                </div>
+            </nav>
+        </header>
+        
+        <div class="nav-line"> </div>
+
+        <div class="social-media-icons">
+            <i class="fab fa-facebook-f" style="padding: 10px 12px; font-size: 11px;"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+
+        
+        <div class="center-part">
+            <div class="left">
+                <h3>Space Exploration Technologies Corp. is an American aerospace manufacturer and space transportation services company headquartered in Hawthorne, California.</h3>
+                <button class="button" id="explore-space">Explore Space</button>
+            </div>
+            <div class="right">
+                <img src="./img/astronaut.png" alt="Astronaut" id="astro-img">
+            </div>
+        </div>
+        
+        <div class="vertical-line"></div>
+    </div>
+    
+
+    <!-- Small ad for starlink -->
+    <div class="starlink-ad">
+        <p>Starlink Mission</p>
+        <button class="button" id="join-now">Join Now</button>
+    </div>
+
+
+    <!-- Falcon-9 Rocket -->
+    <div class="final-screen">
+        <div class="main-content">
+            <!-- Left side text -->
+            <div class="left-side-of-rocket">
+                <div class="falcon-9">
+                    <h2>FALCON9</h2>
+                    <div class="underline"></div>
+                    <p>Falcon 9 is a two staged rocket deesigned and manufactured by SpaceX for the reliable and safe transport of satellites and Dragon spacecraft into the orbit</p>
+                </div>
+                    
+                <div class="dragon-spacecraft">
+                    <h2>DRAGON SPACECRAFT</h2>
+                    <div class="underline"></div>
+                    <p>Dragon carries cargo in the spacecraft's pressurized capsule and underpressurized trunk, which can also accomodate secondary payloads. In the future dragon will carry astronauts in the pressurized capsule as well. </p>
+                    <button class="button">Learn More</button>
+                    <hr class="object-pointer">
+                </div>
+
+                <div class="composite-fairing">
+                    <h2>COMPOSITE FAIRING</h2>
+                    <div class="underline"></div>
+                    <p>The payload fairing is for the delivery of satellites to destinations in Low Earth Orbit (LEO), Geosynchronous Transfer Orbit(GTO) and beyond.</p>
+                    <button class="button">Learn More</button>  
+                </div>
+
+                <div class="first-stage">
+                    <h2>FIRST STAGE</h2>
+                    <div class="underline"></div>
+                    <p>Falcon 9's first stage incorporates nine Merlin engines and aluminium-lithium alloy tanks containing liquid oxygen and rocket-grade kerosese(RP-1) propellant.</p>
+                    <button class="button">Learn More</button>  
+                    <hr class="object-pointer">
+                </div>
+
+                <div class="engine-burntime">
+                    <div class="engine">
+                        <p>ENGINE</p>
+                        <div class="small-underline"></div>
+                        <h2  class="engine-number">9</h2>
+                    </div>
+
+                    <div class="burntime">
+                        <p>BURNTIME</p>
+                        <div class="small-underline"></div>
+                        <div class="number-sec">
+                            <h2>162</h2>
+                            <p>sec</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="thrust-at-sea-level">
+                    <p>Thrust At Sea Level</p>
+                    <div class="small-underline"></div>
+                    <h2>7,607kN1</h2>
+                </div>
+
+            </div>
+            
+            <!-- Middle Rocket Images -->
+            <div class="rocket-img">
+                <img src="./img/rocket1.png" alt="Top of Rocket" id="rocket-1" class="rocket">
+                <img src="./img/rocket2.png" alt="2nd Stage" class="rocket" id="rocket-2">
+                <img src="./img/rocket3.png" alt="1st Stage" class="rocket" id="rocket-3">
+            </div>
+            
+            <!-- Right Side Texts -->
+            <div class="right-side-of-rocket">
+                <div>
+                    <div class="payload">
+                        <h2>PAYLOAD</h2>
+                        <div class="underline"  id="payload-underline"></div>
+                        <p>Falcon9 delivers payloads to space aboard the Dragon spacecraft or inside the composite fairing</p>
+                        <hr class="object-pointer" >
+                    </div>
+
+                    <div class="second-stage">
+                        <h2>SECOND STAGE</h2>
+                        <div class="underline" ></div>
+                        <p>The second stage, powered by a single Merlin vaccume engine, delivers Falcon9 payload to desired orbit.For maximum reliablility,the second stage has redundant igniter systems.</p>
+                    </div>
+
+                    <div class="engine-burntime">
+                        <div class="engine">
+                            <p>ENGINE</p>
+                            <div class="small-underline"></div>
+                            <h2 class="engine-number">1</h2>
+                        </div>
+
+                        <div class="burntime">
+                            <p>BURNTIME</p>
+                            <div class="small-underline"></div>
+                            <div class="number-sec">
+                                <h2>397</h2>
+                                <p>sec</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="thrust-at-sea-level">
+                        <p>Thrust At Sea Level</p>
+                        <div class="small-underline"></div>
+                        <h2>934kN210</h2>
+                    </div>
+
+                    <div class="merlin-engine-photo">
+                        <img src="./img/engines.png" alt="Merlin Engines" class="merlin-engine-img">
+                    </div>
+
+                    <div class="nine-merline-engines">
+                        <p>Nine Merlin Engines</p>
+                        <p>With its nine first-stage Merlin engines clustered together, Falcon9 can sustain upto two engine shutdowns during flight and still successfully complete its mission. Falcon9 is the only launch vehicle in its class with this key reliablility features.</p>
+                        <hr class="object-pointer" >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Side most image  -->
+        <div class="last-transparent-img">
+            <img src="./img/bus.png" alt="" id="bus">
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="logo">
+            <img src="./img/logo.png" alt="LOGO">
+        </div>
+
+        <div class="about-us">
+            <ul>
+                <h3>About Us</h3>
+                <hr class="small-underline">
+                <li><a href="#">WHO ARE WE</a> </li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">MISSONS</a></li>
+                <li><a href="#">OTHER COMPANIES</a></li>
+            </ul>
+        </div>
+
+        <div class="company">
+            <ul>
+                <h3>Company</h3>
+                <hr class="small-underline">
+                <li><a href="#">CAREERS</a> </li>
+                <li><a href="#">LEGAL</a></li>
+                <li><a href="#">POLICY</a></li>
+                <li><a href="#">PRESS</a></li>
+                <li><a href="#">BLOG</a></li>
+            </ul>
+        </div>
+
+        <div class="socials">
+            <h3>Socials</h3>
+            <hr class="small-underline">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

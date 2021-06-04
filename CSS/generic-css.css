@@ -1,0 +1,87 @@
+.button{
+    font-family: 'Montserrat';
+    margin: 1.6rem 0rem;
+    padding: 0.6rem 3rem;
+    border-radius: 2rem;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    opacity: 0.9;
+    border: 1px solid white;
+}
+
+.button:hover{
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+    /* background-color: rgb(44, 46, 45); */
+    background-color: transparent;
+}
+
+.main-content  p {
+    font-weight: 100;
+    font-size:15px;
+    line-height: 1.1rem;
+    text-align: left;
+    width: 90%;
+}
+
+.main-content  h2{
+    padding-bottom: 0.2rem;
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+.main-content  .underline{
+    width: 50px;
+    height: 4px;
+    color: white;
+    background-color: white;
+    margin-bottom: 1rem;
+    border-radius: 20%;
+}
+
+.main-content .object-pointer{
+    width: 6rem;
+    height: 1px;
+    color: white;
+    background-color: white;
+    position: relative;
+}
+
+
+.main-content button{
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 0.4rem 2rem;
+}
+
+
+.engine-burntime{
+    display: flex;
+    margin-top: 5rem;
+}
+
+.engine-burntime .number-sec{
+    display: flex;
+    align-items: center;
+}
+
+.engine-burntime .burntime{
+    margin-left: 2rem;
+}
+
+.small-underline{
+    width: 2rem;
+    height: 0.1rem;
+    color: white;
+    background-color: white;
+    margin-bottom: 0.5rem;
+    border-radius: 20%;
+}
+
+.thrust-at-sea-level{
+    margin-top: 1.5rem;
+}
+
